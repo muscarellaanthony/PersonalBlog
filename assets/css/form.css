@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+    height: 50px;
+}
+
+h1{
+    margin: 10px;
+}
+
+main{
+    display: flex;
+    column-gap: 4px;
+}
+
+.left-section, .right-section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section{
+    flex-direction: column;
+    border-left: 2px black solid;
+    row-gap: 5px;
+}
+
+.left-section{
+    border-right: 2px black solid;
+}
+
+form{
+    width: 90%;
+}
+
+#content, #title, #username{
+    width: 98.5%;
+}
+
+#submit-post{
+    background-color: black;
+    color: white;
+    width: 90%;
+}
+
+#submit-post:hover{
+    
+}
