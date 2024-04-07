@@ -1,8 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
+    border-bottom: 2px solid black;
     height: 50px;
 }
 
@@ -13,6 +19,7 @@ h1{
 main{
     display: flex;
     column-gap: 4px;
+    border-top: 2px solid black;
 }
 
 .left-section, .right-section{
@@ -47,5 +54,5 @@ form{
 }
 
 #submit-post:hover{
-    
+    background-color: blueviolet;
 }
