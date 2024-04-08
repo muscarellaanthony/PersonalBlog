@@ -1,4 +1,4 @@
-function submitEntry (){
+function submitEntry (event){
     const blogEntries = {
         usernameEntry: username.value,
         titleEntry: title.value,
@@ -6,7 +6,8 @@ function submitEntry (){
     }
     if (blogEntries.usernameEntry=='' || blogEntries.titleEntry=='' || blogEntries.contentEntry==''){
         console.log(username.value);
-        alert("You must complete all fields");
+        alert("You must complete all fields.");
+        event.preventDefault();
     }
     else{
     console.log(blogEntries);
@@ -14,7 +15,8 @@ function submitEntry (){
 }
 }
 
-submitButton = document.getElementById("submit-post");
+// submitButton = document.getElementById("submit-post");
+submitButton = document.getElementById("submit");
 username = document.getElementById("username");
 title = document.getElementById("title");
 content = document.getElementById("content");
