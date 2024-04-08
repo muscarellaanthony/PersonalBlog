@@ -45,18 +45,20 @@ form{
 
 #content, #title, #username{
     width: 98.5%;
+    margin-bottom: 5px;
 }
 
 a{
     width: 90%;
 }
 
-#submit-post{
+#submit{
     background-color: black;
     color: white;
-    width: 90%;
+    width: 100%;
 }
 
-#submit-post:hover{
+#submit:hover{
     background-color: blueviolet;
+    cursor: pointer;
 }

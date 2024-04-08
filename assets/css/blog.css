@@ -24,6 +24,11 @@ h1{
     margin: 10px;
 }
 
+.blog-form{
+    display: flex;
+    align-items: center;
+}
+
 main{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -55,5 +60,14 @@ main{
     font-size: 10px;
     margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+footer{
+    border-top: solid black 2px;
+}
+
+a{
+    font-size: 10px;
     margin-left: 10px;
 }
