@@ -1,18 +1,21 @@
 function submitEntry (event){
-    const blogEntries = {
+    const stringPost = localStorage.getItem('blogEntries')
+    const blogEntries = JSON.parse(stringPost) || [];
+
+    const blogEntry = {
         usernameEntry: username.value,
         titleEntry: title.value,
         contentEntry: content.value.trim()
     }
-    if (blogEntries.usernameEntry=='' || blogEntries.titleEntry=='' || blogEntries.contentEntry==''){
+    if (blogEntry.usernameEntry=='' || blogEntry.titleEntry=='' || blogEntry.contentEntry==''){
         console.log(username.value);
         alert("You must complete all fields.");
         event.preventDefault();
     }
     else{
-    console.log(blogEntries);
-    localStorage.setItem('blogEntry',JSON.stringify(blogEntries));
-}
+    blogEntries.push(blogEntry)
+    localStorage.setItem('blogEntries', JSON.stringify(blogEntries))
+    }
 }
 
 // submitButton = document.getElementById("submit-post");
