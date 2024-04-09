@@ -18,9 +18,24 @@ function submitEntry (event){
     }
 }
 
+function lightSwitch(){
+    
+    formStyleLink = document.getElementById('formStyle')
+    if (formStyleLink.getAttribute('href') === './assets/css/form.css'){
+        formStyleLink.setAttribute('href','./assets/css/dark.css')
+        console.log('is work')
+    }
+    else{
+        formStyleLink.setAttribute('href','./assets/css/form.css')
+        console.log('is working')
+    }
+}
+
 // submitButton = document.getElementById("submit-post");
 submitButton = document.getElementById("submit");
 username = document.getElementById("username");
 title = document.getElementById("title");
 content = document.getElementById("content");
-submitButton.addEventListener("click", submitEntry)
+submitButton.addEventListener("click", submitEntry);
+lightDark = document.getElementById("lightDark")
+lightDark.addEventListener('click', lightSwitch)

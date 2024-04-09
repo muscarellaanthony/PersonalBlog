@@ -1,0 +1,150 @@
+/*-------------------------------*/
+/* FORM DARK MODE */
+/*-------------------------------*/
+*{
+    color: white;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    background-color: rgb(44, 39, 39);
+}
+
+.form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    height: 50px;
+}
+
+.form-h1{
+    margin: 10px;
+}
+
+.form-main{
+    display: flex;
+    column-gap: 4px;
+    border-top: 2px solid black;
+}
+
+.left-section, .right-section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section{
+    flex-direction: column;
+    border-left: 2px black solid;
+    row-gap: 5px;
+}
+
+.left-section{
+    border-right: 2px black solid;
+}
+
+form{
+    width: 90%;
+}
+
+#content, #title, #username{
+    width: 98.5%;
+    margin-bottom: 5px;
+}
+
+a{
+    width: 90%;
+}
+
+#submit{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+#submit:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+/*-------------------------------*/
+/* BLOG DARK MODE */
+/*-------------------------------*/
+
+.blog-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.blog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    height: 50px;
+}
+
+footer{
+    height: 50px;
+}
+
+.back-div{
+    display: flex;
+}
+
+.blog-h1{
+    margin: 10px;
+}
+
+.blog-form{
+    display: flex;
+    align-items: center;
+}
+
+.blog.main{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-div{
+    border: solid black 2px;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.blog-title{
+    font-weight: bolder;
+    border-bottom: solid black 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.blog-content{
+    text-indent: 20px;
+    margin-top: 5px;
+}
+
+.blog-author{
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+footer{
+    border-top: solid black 2px;
+}
+
+.blog-a{
+    font-size: 10px;
+    margin-left: 10px;
+}
