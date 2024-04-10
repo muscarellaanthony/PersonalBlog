@@ -54,6 +54,7 @@ form{
 #content, #title, #username{
     width: 98.5%;
     margin-bottom: 5px;
+    color: black;
 }
 
 #submit{

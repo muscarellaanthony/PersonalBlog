@@ -1,5 +1,6 @@
-function submitEntry (event){
-    const blogEntries = JSON.parse(stringPost) || [];
+function submitEntry (){
+    console.log('it worked')
+    const blogEntries = JSON.parse(localStorage.getItem('stringPost')) || [];
 
     const blogEntry = {
         usernameEntry: username.value,
@@ -32,11 +33,11 @@ function lightSwitch(){
     }
 }
 
-// submitButton = document.getElementById("submit-post");
 submitButton = document.getElementById("submit");
 username = document.getElementById("username");
 title = document.getElementById("title");
 content = document.getElementById("content");
 submitButton.addEventListener("click", submitEntry);
+
 lightDark = document.getElementById("lightDark")
 lightDark.addEventListener('click', lightSwitch)
