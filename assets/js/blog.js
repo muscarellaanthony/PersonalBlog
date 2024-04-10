@@ -27,6 +27,20 @@ const displayNewPost = function (){
     }
 }
 
+function lightSwitch(){
+    
+    formStyleLink = document.getElementById('formStyle')
+    if (formStyleLink.getAttribute('href') === './assets/css/blog.css'){
+        formStyleLink.setAttribute('href','./assets/css/dark.css')
+        console.log('is work')
+    }
+    else{
+        formStyleLink.setAttribute('href','./assets/css/blog.css')
+        console.log('is working')
+    }
+}
 
 displayNewPost()
-console.log('hello')
+
+lightDark = document.getElementById("lightDark")
+lightDark.addEventListener('click', lightSwitch)

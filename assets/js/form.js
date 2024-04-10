@@ -1,5 +1,4 @@
 function submitEntry (event){
-    const stringPost = localStorage.getItem('blogEntries')
     const blogEntries = JSON.parse(stringPost) || [];
 
     const blogEntry = {
@@ -8,7 +7,7 @@ function submitEntry (event){
         contentEntry: content.value.trim()
     }
     if (blogEntry.usernameEntry=='' || blogEntry.titleEntry=='' || blogEntry.contentEntry==''){
-        console.log(username.value);
+        console.log(username.value);                   
         alert("You must complete all fields.");
         event.preventDefault();
     }
@@ -19,14 +18,16 @@ function submitEntry (event){
 }
 
 function lightSwitch(){
-    
+    pictureLink = document.getElementById('image')
     formStyleLink = document.getElementById('formStyle')
     if (formStyleLink.getAttribute('href') === './assets/css/form.css'){
         formStyleLink.setAttribute('href','./assets/css/dark.css')
+        pictureLink.setAttribute('src', './assets/images/Sun-Grey.jpg')
         console.log('is work')
     }
     else{
         formStyleLink.setAttribute('href','./assets/css/form.css')
+        pictureLink.setAttribute('src', './assets/images/Sun-white.jpg')
         console.log('is working')
     }
 }

@@ -1,10 +1,10 @@
-body{
+.blog-body{
     display: flex;
     flex-direction: column;
     row-gap: 4px;
 }
 
-header{
+.blog-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@ footer{
     display: flex;
 }
 
-h1{
+.blog-h1{
     margin: 10px;
 }
 
@@ -29,7 +29,7 @@ h1{
     align-items: center;
 }
 
-main{
+.blog-main{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     display: flex;
@@ -67,7 +67,7 @@ footer{
     border-top: solid black 2px;
 }
 
-a{
+.blog-a{
     font-size: 10px;
     margin-left: 10px;
 }
